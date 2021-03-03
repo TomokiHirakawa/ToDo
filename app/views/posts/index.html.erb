@@ -1,0 +1,15 @@
+<div class="main posts-index">
+    <div class="container">
+    <h1>投稿一覧</h1>
+        <% @posts.each do |post| %>
+            <div class="post-index-group">
+                <%= link_to("#") do %>
+                    <i class="fas fa-check"></i>
+                <% end %>
+                <div class="post-index-item">
+                    <%= link_to(post.content, "/posts/#{post.id}", class: "post-item") %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

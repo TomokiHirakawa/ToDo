@@ -1,0 +1,55 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+//---index-----------------------------------------------
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.post-index-item {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.post-item {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.fa-check {
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.fa-check:hover {
+    background-color: rgb(122, 255, 110);
+    color: white;
+    transition: all 0.5s;
+}
+
+//---new-----------------------------------------------
+
+.post-new-input {
+    height: 30px;
+    font-size: 20px;
+    width: 40%;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.post-new-btn {
+    line-height: 30px;
+    display: block;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 3px;
+}

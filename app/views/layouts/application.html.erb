@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDoアプリ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+    <div class="header_title">
+      <a href="/top"><h1>ToDoアプリ</h1></a>
+    </div>
+    <nav>
+      <ul class="nav_group">
+        <li class="nav_item">
+          <a href="/posts/new">タスクの登録</a>
+        </li>
+        <li class="nav_item">
+          <a href="/posts/index">タスクの確認</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <%= yield %>
+  </body>
+</html>
